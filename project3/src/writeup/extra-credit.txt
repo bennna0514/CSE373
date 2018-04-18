@@ -1,0 +1,8 @@
+For extra credit, I implemented EnhancedQueryAnalyzer with the blackListing and exact phrase searching functions. 
+1. For the blackListing search, what I did is creating a separate Ilist and a boolean statement that identifies
+whether the phrase contains "-", and then add the corresponding blackPhrase list to our Ilist. One interesting
+query you can try is a string with two hyphens. It should return back to one hyphen. 
+2. For the exactPhrase search, I used two boolean functions to identify whether our phrases include parenthesis, 
+and then store the phrase with blanks. The potential problem is that I didn't do any other symbol identifications, 
+such as "+", "%", "&", etc. One interesting query you can try is a half parenthesis string, i.e, strings that only
+contains "(", or strings that only contain ")". 
